@@ -24,6 +24,8 @@
 
 #import "TTTDictionary.h"
 
+#define NSLog(...)
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         if(argc != 3) {
