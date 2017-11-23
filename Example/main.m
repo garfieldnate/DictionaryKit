@@ -41,9 +41,11 @@ int main(int argc, const char * argv[]) {
             html = true;
         }
         
+        //        NSString *dictName = @"牛津英汉汉英词典";
+        //        NSString *term = @"词典";
+
         NSString *dictName = [NSString stringWithUTF8String:argv[1]];
         NSString *term = [NSString stringWithUTF8String:argv[2]];
-        
         TTTDictionary *dictionary = [TTTDictionary dictionaryNamed:dictName];
         NSLog(@"%@\n", dictionary.name);
 
