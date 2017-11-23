@@ -26,12 +26,23 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        TTTDictionary *dictionary = [TTTDictionary dictionaryNamed:DCSOxfordDictionaryOfEnglish];
+        if(argc != 3) {
+            printf("Usage: lookup <dict_name> <term>.\nAvailable dictionaries: \n");
+            NSSet *allDics = [TTTDictionary availableDictionaries];
+            for (TTTDictionary *dictionary in allDics) {
+                printf("  %s\n", dictionary.name.UTF8String);
+            }
+            return 0;
+        }
+        
+        NSString *dictName = [NSString stringWithUTF8String:argv[1]];
+        NSString *term = [NSString stringWithUTF8String:argv[2]];
+        
+        TTTDictionary *dictionary = [TTTDictionary dictionaryNamed:dictName];
         NSLog(@"%@\n", dictionary.name);
 
-        NSString *term = @"apple";
         for (TTTDictionaryEntry *entry in [dictionary entriesForSearchTerm:term]) {
-            NSLog(@"%@", entry.text);
+            printf("%s\n", entry.text.UTF8String);
         }
     }
 

@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F8B8BF4D18CD026E00B27A52 /* DictionaryKit Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DictionaryKit Example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B8BF4D18CD026E00B27A52 /* DictionaryKit Lookup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DictionaryKit Lookup"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B8BF5018CD026E00B27A52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8B8BF5618CD026E00B27A52 /* DictionaryKit Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DictionaryKit Example-Prefix.pch"; sourceTree = "<group>"; };
 		F8B8BF6E18CD0CF000B27A52 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -52,7 +52,7 @@
 		F8B8BF4418CD026E00B27A52 = {
 			isa = PBXGroup;
 			children = (
-				F8B8BF5218CD026E00B27A52 /* DictionaryKit Example */,
+				F8B8BF5218CD026E00B27A52 /* DictionaryKit Lookup */,
 				F8B8BF4F18CD026E00B27A52 /* Frameworks */,
 				F8B8BF4E18CD026E00B27A52 /* Products */,
 				F8B8BF5E18CD029B00B27A52 /* Vendor */,
@@ -62,7 +62,7 @@
 		F8B8BF4E18CD026E00B27A52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8B8BF4D18CD026E00B27A52 /* DictionaryKit Example */,
+				F8B8BF4D18CD026E00B27A52 /* DictionaryKit Lookup */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,12 +76,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F8B8BF5218CD026E00B27A52 /* DictionaryKit Example */ = {
+		F8B8BF5218CD026E00B27A52 /* DictionaryKit Lookup */ = {
 			isa = PBXGroup;
 			children = (
 				F8B8BF7518CD0E6C00B27A52 /* main.m */,
 				F8B8BF5518CD026E00B27A52 /* Supporting Files */,
 			);
+			name = "DictionaryKit Lookup";
 			path = "DictionaryKit Example";
 			sourceTree = "<group>";
 		};
@@ -115,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8B8BF4C18CD026E00B27A52 /* DictionaryKit Example */ = {
+		F8B8BF4C18CD026E00B27A52 /* DictionaryKit Lookup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8B8BF5B18CD026E00B27A52 /* Build configuration list for PBXNativeTarget "DictionaryKit Example" */;
+			buildConfigurationList = F8B8BF5B18CD026E00B27A52 /* Build configuration list for PBXNativeTarget "DictionaryKit Lookup" */;
 			buildPhases = (
 				F8B8BF4918CD026E00B27A52 /* Sources */,
 				F8B8BF4A18CD026E00B27A52 /* Frameworks */,
@@ -127,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = "DictionaryKit Example";
+			name = "DictionaryKit Lookup";
 			productName = "DictionaryKit Example";
-			productReference = F8B8BF4D18CD026E00B27A52 /* DictionaryKit Example */;
+			productReference = F8B8BF4D18CD026E00B27A52 /* DictionaryKit Lookup */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +142,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Mattt Thompson";
 			};
-			buildConfigurationList = F8B8BF4818CD026E00B27A52 /* Build configuration list for PBXProject "DictionaryKit Example" */;
+			buildConfigurationList = F8B8BF4818CD026E00B27A52 /* Build configuration list for PBXProject "DictionaryKit Lookup" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -153,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8B8BF4C18CD026E00B27A52 /* DictionaryKit Example */,
+				F8B8BF4C18CD026E00B27A52 /* DictionaryKit Lookup */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8B8BF4818CD026E00B27A52 /* Build configuration list for PBXProject "DictionaryKit Example" */ = {
+		F8B8BF4818CD026E00B27A52 /* Build configuration list for PBXProject "DictionaryKit Lookup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8B8BF5918CD026E00B27A52 /* Debug */,
@@ -269,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8B8BF5B18CD026E00B27A52 /* Build configuration list for PBXNativeTarget "DictionaryKit Example" */ = {
+		F8B8BF5B18CD026E00B27A52 /* Build configuration list for PBXNativeTarget "DictionaryKit Lookup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8B8BF5C18CD026E00B27A52 /* Debug */,
