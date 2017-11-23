@@ -28,13 +28,17 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        if(argc != 3) {
-            printf("Usage: lookup <dict_name> <term>.\nAvailable dictionaries: \n");
+        if(argc < 3 || argc > 4) {
+            printf("Usage: lookup <dict_name> <term> [html]\nAvailable dictionaries: \n");
             NSSet *allDics = [TTTDictionary availableDictionaries];
             for (TTTDictionary *dictionary in allDics) {
                 printf("  %s\n", dictionary.name.UTF8String);
             }
             return 0;
+        }
+        Boolean html = false;
+        if( argc == 4 && [[NSString stringWithUTF8String:argv[3]] caseInsensitiveCompare:@"HTML"] == NSOrderedSame ) {
+            html = true;
         }
         
         NSString *dictName = [NSString stringWithUTF8String:argv[1]];
@@ -44,7 +48,11 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@\n", dictionary.name);
 
         for (TTTDictionaryEntry *entry in [dictionary entriesForSearchTerm:term]) {
-            printf("%s\n", entry.text.UTF8String);
+            if(html) {
+                printf("%s\n", entry.HTML.UTF8String);
+            } else {
+                printf("%s\n", entry.text.UTF8String);
+            }
         }
     }
 
