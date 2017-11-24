@@ -55,6 +55,7 @@ int main(int argc, const char * argv[]) {
             } else {
                 printf("%s\n", entry.text.UTF8String);
             }
+            printf("============== END ENTRY ==============\n");
         }
     }
 
